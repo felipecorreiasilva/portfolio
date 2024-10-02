@@ -18,7 +18,7 @@ const MainContainer = (props:PropsMainContainer) => {
   return (
     <>
     {isClient &&
-      <div className='flex flex-col h-screen text-white'>
+      <div className='flex flex-col h-screen text-white overflow-x-hidden'>
         <Header />
         <main className="flex justify-center items-center">
             
