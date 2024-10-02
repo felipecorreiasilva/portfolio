@@ -68,9 +68,12 @@ const Navbar = () => {
                             return (
                                 
                                     
-                                    <li className={`hover:border-b hover:border-b-blue-900 hover:text-blue-900 py-4 mx-auto text-center`} key={i}>
-                                    <Link onClick={()=>setOpenMenu(!openMenu)} key={i} href={link.path}>{link.name}</Link>
-                                    </li> 
+                                    
+                                    <Link 
+                                    className={`flex flex-col hover:border-b hover:border-b-blue-900 hover:text-blue-900 py-4 
+                                    mx-auto text-center`} 
+                                    key={i} onClick={()=>setOpenMenu(!openMenu)} href={link.path}>{link.name}</Link>
+                                    
 
                                 
                                 
