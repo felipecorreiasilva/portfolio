@@ -26,10 +26,10 @@ const MainContainer = (props:PropsMainContainer) => {
 
         </main>
         <footer className='px-32 pb-32'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between space-x-16'>
             <div></div>
-            <div className='' >
-                <p>{process.env.NEXT_PUBLIC_MY_LOC}</p>
+            <div className='text-xs sm:text-sm' >
+                <p className=''>{process.env.NEXT_PUBLIC_MY_LOC}</p>
                 <p className='my-2' >{InputMask('phone',''+process.env.NEXT_PUBLIC_MY_WPP)}</p>
                 <p>{process.env.NEXT_PUBLIC_MY_EMAIL}</p>
             </div>

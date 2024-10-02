@@ -157,7 +157,7 @@ export const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.5 }}
-            className="lg:mt-24 grid lg:grid-cols-2 gap-3">
+            className="lg:mt-24 grid lg:grid-cols-2 gap-4">
 
 
                 <label className="relative">
@@ -171,7 +171,7 @@ export const Contact = () => {
                   value={formData.firstname}
                   onChange={handleOnChange}
                   type="text" />
-                  <p className=' text-neutral-500 absolute
+                  <p className='text-neutral-500 absolute
                   peer-focus:-translate-y-5 peer-focus:text-sm left-0 top-[6px] ml-2 px-[6px] duration-300 bg-primary-950 peer-valid:text-sm peer-valid:-translate-y-5'>
                   Name
                   <span 
@@ -311,7 +311,7 @@ export const Contact = () => {
 
                 <button 
                 type='submit' 
-                className='sm:col-start-2 p-1 my-4 border-2 border-blue-900 hover:bg-blue-900 text-blue-900 hover:text-white bg-transparent rounded-md'>Enviar</button>
+                className='sm:col-start-2 p-1 my-4 border-2 border-blue-900 hover:bg-blue-900 text-blue-900 hover:text-white bg-transparent rounded-md'>Submit</button>
 
             </motion.div>
 
