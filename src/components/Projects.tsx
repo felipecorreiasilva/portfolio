@@ -15,8 +15,8 @@ const Projects = () => {
         initial={{ opacity: 0, y: -100 }}
         transition={{duration: 1.5}}
         className='my-16 text-center text-4xl'>
-            Projetos 
-            <span className='text-blue-600'> recentes</span>
+            Latest 
+            <span className='text-blue-600'> projects</span>
         </motion.h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8">

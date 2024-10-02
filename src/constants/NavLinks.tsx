@@ -6,7 +6,7 @@ export const links = [
     },
     
     {
-        name: 'Sobre',
+        name: 'About',
         path: '#about'
     },
     
@@ -16,12 +16,12 @@ export const links = [
     },
     
     {
-        name: 'Projetos',
+        name: 'Projects',
         path: '#projects'
     },
     
     {
-        name: 'Contato',
+        name: 'Contact',
         path: '#contact'
     },
 

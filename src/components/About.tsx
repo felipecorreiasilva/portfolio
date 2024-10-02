@@ -4,7 +4,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 
 export const About = () => {
-    const ABOUT_TEXT = `Tudo começou com curiosidades em jogos, desde então tudo se tornou mais divertido, sempre procurei saber como os jogos enviavam e recebiam dados com conexão cliente e servidor, então decidir buscar diretamente em desenvolvimentos web e acabei absorvendo conhecimento como funciona o desenvolvimento android/ios com React-Native, além de conhecer como funciona transações em sites de comércio de produtos, e especialmente como começei conhecendo a linguagem c++, depois que conhecir javascript e typescript, isso me entregou um pouco a mais de confiança em Solidity e Blockchain`;
+    const ABOUT_TEXT = `It all started with curiosities in games, since then everything became more fun, I always tried to find out how games sent and received data with client and server connections, then I decided to look directly into web development and ended up absorbing knowledge about how Android/ios development works with React-Native, in addition to knowing how transactions work on product commerce sites, and especially how I started knowing the C++ language, after getting to know Javascript and Typescript, this gave me a little more confidence in Solidity and Blockchain`;
   return (
     
         <section className='pt-16 border-b border-primary-800' id="about">
@@ -13,8 +13,8 @@ export const About = () => {
             initial={{ opacity: 0, y: -100 }}
             transition={{duration: 1.5}}
             className='my-14 text-center text-4xl'>
-            Sobre 
-            <span className='text-blue-600'> mim</span>
+            About 
+            <span className='text-blue-600'> me</span>
             </motion.h1>
             <div className="sm:flex sm:my-32 justify-center items-center gap-32">
 

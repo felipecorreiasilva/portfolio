@@ -25,11 +25,11 @@ export const Contact = () => {
   })
 
   const wpp_url = 'https://wa.me/' + process.env.NEXT_PUBLIC_MY_WPP + "?text="
-    +"Olá meu nome é " + formData.firstname + ' ' + formData.lastname + "%0a"
-    +"Telefone: " + formData.phone + "%0a"
+    +"Hello my name is " + formData.firstname + ' ' + formData.lastname + "%0a"
+    +"Telephone: " + formData.phone + "%0a"
     +"Email: " + formData.email + "%0a"
-    +"Assunto: " + formData.subject + "%0a"
-    +"Menssagem: " + formData.message + ""
+    +"Subject: " + formData.subject + "%0a"
+    +"Message: " + formData.message + ""
   
 
   const handleOnChange = (e:any)=> {
@@ -64,51 +64,61 @@ export const Contact = () => {
     }
 
     if (!formData.firstname.trim()){
-        validationErrors.firstname = "Nome é obrigatório"
+        validationErrors.firstname = "Name is required"
         setErrors(validationErrors)
         return
     } else if (formData.firstname.length < 3){
-        validationErrors.firstname = 'Nome deve ter pelo menos 3 caracteres'
+        validationErrors.firstname = 'Name must have at least 3 characters.'
         setErrors(validationErrors)
         return
     }
 
     if (!formData.lastname.trim()){
-        validationErrors.lastname = "Sobrenome é obrigatório"
+        validationErrors.lastname = "Last name is required."
         setErrors(validationErrors)
         return
     } else if (formData.lastname.length < 3){
-        validationErrors.lastname = 'Sobrenome deve ter pelo menos 3 caracteres'
+        validationErrors.lastname = 'Last name must have at least 3 characters.'
         setErrors(validationErrors)
         return
     }
 
     if (!formData.email.trim()){
-        validationErrors.email = "E-mail é obrigatório"
+        validationErrors.email = "E-mail is required."
         setErrors(validationErrors)
         return
     } else if (!/\S+@\S+\.\S+/.test(formData.email)){
-        validationErrors.email = 'E-mail não é válido'
+        validationErrors.email = 'Invalid email format.'
         setErrors(validationErrors)
         return
     }
 
     if (!formData.phone.trim()){
-        validationErrors.phone = "Telefone é obrigatório"
+        validationErrors.phone = "Phone is required."
         setErrors(validationErrors)
         return
     } else if (formData.phone.length < 11){
-        validationErrors.phone = 'Telefone deve ter pelo menos 11 caracteres'
+        validationErrors.phone = 'Phone must have at least 11 characters.'
         setErrors(validationErrors)
         return
     }
 
     if (!formData.subject.trim()){
-        validationErrors.subject = "Assunto é obrigatório"
+        validationErrors.subject = "Subject is required."
         setErrors(validationErrors)
         return
     } else if (formData.subject.length < 3){
-        validationErrors.subject = 'Assunto deve ter pelo menos 3 caracteres'
+        validationErrors.subject = 'Subject must have at least 3 characters.'
+        setErrors(validationErrors)
+        return
+    }
+
+    if (!formData.message.trim()){
+        validationErrors.message = "Message is required."
+        setErrors(validationErrors)
+        return
+    } else if (formData.message.length < 4){
+        validationErrors.message = 'message must have at least 4 characters.'
         setErrors(validationErrors)
         return
     }
@@ -138,7 +148,7 @@ export const Contact = () => {
         initial={{ opacity: 0, y: -100 }}
         transition={{duration: 1.5}}
         className='mt-14 text-center text-4xl'>
-            Contate 
+            Contact 
             <span className='text-blue-600'> me</span>
         </motion.h1>
         <form onSubmit={handleSubmit} className='p-12 lg:p-0' >
@@ -155,7 +165,7 @@ export const Contact = () => {
                   <input 
                   required
                   name='firstname'
-                  placeholder='Digite seu nome' 
+                  placeholder='Enter your name'
                   className="duration-300 placeholder:opacity-0 focus:placeholder:opacity-100 placeholder:text-xs shadow-md text-neutral-500 border rounded-md outline-none 
                   focus:border-neutral-300 peer pl-[16px] p-[6px] bg-inherit w-full"
                   value={formData.firstname}
@@ -163,7 +173,7 @@ export const Contact = () => {
                   type="text" />
                   <p className=' text-neutral-500 absolute
                   peer-focus:-translate-y-5 peer-focus:text-sm left-0 top-[6px] ml-2 px-[6px] duration-300 bg-primary-950 peer-valid:text-sm peer-valid:-translate-y-5'>
-                  Nome
+                  Name
                   <span 
                   className='text-red-500 ml-1'>
                   *</span>
@@ -179,7 +189,7 @@ export const Contact = () => {
                   <input 
                   required
                   name='lastname'
-                  placeholder='Digite seu sobrenome' 
+                  placeholder='Enter your lastname' 
                   className="duration-300 placeholder:opacity-0 focus:placeholder:opacity-100 placeholder:text-xs shadow-md text-neutral-500 border rounded-md outline-none 
                   focus:border-neutral-300 peer pl-[16px] p-[6px] bg-inherit w-full"
                   value={formData.lastname}
@@ -187,7 +197,7 @@ export const Contact = () => {
                   type="text" />
                   <p className=' text-neutral-500 absolute
                   peer-focus:-translate-y-5 peer-focus:text-sm left-0 top-[6px] ml-2 px-[6px] duration-300 bg-primary-950 peer-valid:text-sm peer-valid:-translate-y-5'>
-                  Sobrenome
+                  Lastname
                   <span 
                   className='text-red-500 ml-1'>
                   *</span>
@@ -204,7 +214,7 @@ export const Contact = () => {
                   <input 
                   required
                   name='email'
-                  placeholder='Digite seu email' 
+                  placeholder='Enter your email' 
                   className="duration-300 placeholder:opacity-0 focus:placeholder:opacity-100 placeholder:text-xs shadow-md text-neutral-500 border rounded-md outline-none 
                   focus:border-neutral-300 peer pl-[16px] p-[6px] bg-inherit w-full"
                   value={formData.email}
@@ -229,7 +239,7 @@ export const Contact = () => {
                   <input 
                   required
                   name='phone'
-                  placeholder='Digite seu telefone' 
+                  placeholder='Enter your phone' 
                   className="duration-300 placeholder:opacity-0 focus:placeholder:opacity-100 placeholder:text-xs shadow-md text-neutral-500 border rounded-md outline-none 
                   focus:border-neutral-300 peer pl-[16px] p-[6px] bg-inherit w-full"
                   value={formData.phone}
@@ -237,7 +247,7 @@ export const Contact = () => {
                   type="text" />
                   <p className=' text-neutral-500 absolute
                   peer-focus:-translate-y-5 peer-focus:text-sm left-0 top-[6px] ml-2 px-[6px] duration-300 bg-primary-950 peer-valid:text-sm peer-valid:-translate-y-5'>
-                  Telefone
+                  Phone
                   <span 
                   className='text-red-500 ml-1'>
                   *</span>
@@ -254,7 +264,7 @@ export const Contact = () => {
                   <input 
                   required
                   name='subject'
-                  placeholder='Digite seu assunto' 
+                  placeholder='Enter your subject' 
                   className="duration-300 placeholder:opacity-0 focus:placeholder:opacity-100 placeholder:text-xs shadow-md text-neutral-500 border rounded-md outline-none 
                   focus:border-neutral-300 peer pl-[16px] p-[6px] bg-inherit w-full"
                   value={formData.subject}
@@ -262,7 +272,7 @@ export const Contact = () => {
                   type="text" />
                   <p className=' text-neutral-500 absolute
                   peer-focus:-translate-y-5 peer-focus:text-sm left-0 top-[6px] ml-2 px-[6px] duration-300 bg-primary-950 peer-valid:text-sm peer-valid:-translate-y-5'>
-                  Assunto
+                  Subject
                   <span 
                   className='text-red-500 ml-1'>
                   *</span>
@@ -279,7 +289,7 @@ export const Contact = () => {
                   required
                   name='message'
                   cols={30} rows={10} 
-                  placeholder='Digite sua menssagem'
+                  placeholder='Enter your message'
                   className="duration-300 placeholder:opacity-0 focus:placeholder:opacity-100 placeholder:text-xs shadow-md text-neutral-500 border rounded-md outline-none 
                   focus:border-neutral-300 peer pl-[16px] p-[6px] bg-inherit w-full"
                   value={formData.message}
@@ -287,7 +297,7 @@ export const Contact = () => {
                   />
                   <p className=' text-neutral-500 absolute
                   peer-focus:-translate-y-5 peer-focus:text-sm left-0 top-[6px] ml-2 px-[6px] duration-300 bg-primary-950 peer-valid:text-sm peer-valid:-translate-y-5'>
-                  Mensagem
+                  Message
                   <span 
                   className='text-red-500 ml-1'>
                   *</span>
@@ -296,7 +306,7 @@ export const Contact = () => {
                   
                   
                 </label>
-                {errors.subject && <span className='text-[#ff3333] text-[12px]'>{errors.subject}</span>} 
+                {errors.message && <span className='text-[#ff3333] text-[12px]'>{errors.message}</span>} 
 
 
                 <button 
