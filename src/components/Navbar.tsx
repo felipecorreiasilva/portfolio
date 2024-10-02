@@ -2,12 +2,18 @@
 
 import { links } from '@/constants/NavLinks'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { IoMenu, IoClose } from 'react-icons/io5'
 
 const Navbar = () => {
-
+    const router = useRouter();
     const [openMenu, setOpenMenu] = useState(false)
+
+    const handleNavLinks = (path:string) => {
+        setOpenMenu(!openMenu)
+        router.push(path)
+    }
 
   return (
     
@@ -69,10 +75,10 @@ const Navbar = () => {
                                 
                                     
                                     
-                                    <Link 
+                                    <div 
                                     className={`flex flex-col hover:border-b hover:border-b-blue-900 hover:text-blue-900 py-4 
                                     mx-auto text-center`} 
-                                    key={i} onClick={()=>setOpenMenu(!openMenu)} href={link.path}>{link.name}</Link>
+                                    key={i} onClick={()=>handleNavLinks(link.path)}>{link.name}</div>
                                     
 
                                 
