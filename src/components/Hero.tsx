@@ -21,7 +21,7 @@ const Hero = () => {
   const wpp_url = 'https://wa.me/' + process.env.NEXT_PUBLIC_MY_WPP
 
     const [typeEffect] = useTypewriter({
-      words: ['Developer'],
+      words: ['...'],
       loop: 0,
       typeSpeed: 100,
       deleteSpeed: 40
@@ -46,7 +46,8 @@ const Hero = () => {
         animate="visible"
         className='my-4'>And I'm a
         <span 
-        className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'> Full Stack {typeEffect}</span><Cursor />
+        className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent capitalize'> Full Stack Developer</span><Cursor />
+        {/* className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'> Full Stack {typeEffect}</span><Cursor /> */}
         </motion.h3>
         <motion.p 
         variants={container(1)}
