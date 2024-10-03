@@ -4,7 +4,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 
 export const About = () => {
-    const ABOUT_TEXT = `It all started with curiosities in games, since then everything became more fun, I always tried to find out how games sent and received data with client and server connections, then I decided to look directly into web development and ended up absorbing knowledge about how Android/ios development works with React-Native, in addition to knowing how transactions work on product commerce sites, and especially how I started knowing the C++ language, after getting to know Javascript and Typescript, this gave me a little more confidence in Solidity and Blockchain`;
+    const ABOUT_TEXT = `It all started with curiosities in games, since then everything became more fun, I always tried to discover how games sent and received data with client and server connections, so I decided to look directly at web development and ended up absorbing knowledge about how Android/ios development works with React-Native, in addition to knowing how transactions work on product commerce sites, I studied the C++ language through game emulators and even created some scripts, before knowing Javascript and Typescript, this gave me a little more confidence in Solidity and Blockchain`;
   return (
     
         <section className='pt-16 border-b border-primary-800' id="about">
