@@ -30,16 +30,16 @@ const Navbar = () => {
                 
                     {links.map((link:any, i:number)=>{
                         return (
-                            <div key={i}>
+                        
                             
-                                <li className={`hover:border-b hover:border-b-blue-900 hover:text-blue-900 p-2  `} key={i}>
-                                <Link href={link.path}>{link.name}</Link>
-                                </li> 
+                                
+                                <Link className={`hover:border-b hover:border-b-blue-900 hover:text-blue-900 p-2  `} key={i} href={link.path}>{link.name}</Link>
+                                
 
                             
                             
                             
-                            </div>
+                            
                             
                         )
                     })}
@@ -75,10 +75,10 @@ const Navbar = () => {
                                 
                                     
                                     
-                                    <div 
+                                    <button 
                                     className={`flex flex-col hover:border-b hover:border-b-blue-900 hover:text-blue-900 py-4 
                                     mx-auto text-center`} 
-                                    key={i} onClick={()=>handleNavLinks(link.path)}>{link.name}</div>
+                                    key={i} onClick={()=>handleNavLinks(link.path)}>{link.name}</button>
                                     
 
                                 
