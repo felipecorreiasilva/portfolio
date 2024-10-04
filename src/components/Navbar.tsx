@@ -75,10 +75,10 @@ const Navbar = () => {
                                 
                                     
                                     
-                                    <button 
+                                    <p 
                                     className={`flex flex-col hover:border-b hover:border-b-blue-900 hover:text-blue-900 py-4 
                                     mx-auto text-center`} 
-                                    key={i} onClick={()=>handleNavLinks(link.path)}>{link.name}</button>
+                                    key={i} onClick={()=>handleNavLinks(link.path)}>{link.name}</p>
                                     
 
                                 
