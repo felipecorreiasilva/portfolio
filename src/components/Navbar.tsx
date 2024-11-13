@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     
-        <nav className={`fixed top-0 z-10 w-full font-fontOswald font-bold bg-primary-950`}>
+        <nav className={`fixed top-0 z-10 w-full font-fontOswald font-bold bg-primary-950 pr-8`}>
 
         <ul className='hidden sm:flex justify-between p-8 text-white'>
             <div className="">

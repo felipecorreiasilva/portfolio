@@ -16,9 +16,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          '950': '#04030f',
-  				'900': '#060514',
-  				'800': '#08071a',
+          '950': '#050505',
+  				'900': '#080707',
+  				'800': '#0d0b0b',
         }
       },
     },
