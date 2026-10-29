@@ -1,3 +1,4 @@
+import { About } from '@/components/sections/About';
 import { Hero } from '@/components/sections/Hero';
 import { Projects } from '@/components/sections/Projects';
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#030014]">
       <Hero />
       <Projects />
+      <About />
     </main>
   );
 }

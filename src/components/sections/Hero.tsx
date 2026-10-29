@@ -26,7 +26,7 @@ export function Hero() {
         {/* Lado Esquerdo: Informações e Apresentação */}
         <div className="flex flex-col items-start text-left max-w-2xl">
           <span className="text-sm font-semibold tracking-widest text-purple-400 uppercase mb-4 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-md">
-            Desenvolvedor Full Stack
+            Desenvolvedor Full Stack & Desktop
           </span>
           
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
@@ -34,7 +34,7 @@ export function Hero() {
           </h1>
           
           <p className="text-lg sm:text-xl text-neutral-300 mb-8 leading-relaxed">
-            Desenvolvedor Full Stack especializado em Node.js, React, React Native, Next.js e bancos de dados relacionais e não relacionais.
+            Desenvolvedor Full Stack especializado em Node.js, React, React Native, Next.js, Electron.js e bancos de dados relacionais e não relacionais.
           </p>
 
           <div className="flex flex-wrap gap-4">
