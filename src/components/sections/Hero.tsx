@@ -17,7 +17,7 @@ export function Hero() {
         </video>
         
         {/* Camada de degradê para suavizar o fundo */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#030014]/50 via-[#030014]/70 to-[#030014]" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#030014]/50 via-[#030014]/70 to-[#030014]" />
       </div>
 
       {/* Container Principal com Flexbox (Lado esquerdo: Textos | Lado direito: Foto) */}
@@ -56,8 +56,8 @@ export function Hero() {
         </div>
 
         {/* Lado Direito: Foto de Perfil */}
-        <div className="flex-shrink-0">
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-tr from-purple-600 via-purple-500 to-purple-300 shadow-2xl shadow-purple-500/30">
+        <div className="shrink-0">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-linear-to-tr from-purple-600 via-purple-500 to-purple-300 shadow-2xl shadow-purple-500/30">
             <Image
               src="/avatar.png"
               alt="Felipe Correia"

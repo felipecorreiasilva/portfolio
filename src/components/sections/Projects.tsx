@@ -38,14 +38,14 @@ export function Projects() {
         <div className="group rounded-2xl border border-purple-500/20 bg-neutral-900/50 backdrop-blur-md overflow-hidden shadow-2xl shadow-purple-950/40 grid grid-cols-1 lg:grid-cols-2">
           
           {/* Lado Esquerdo: Imagem do Projeto */}
-          <div className="relative w-full h-64 sm:h-80 lg:h-full min-h-[300px] overflow-hidden bg-neutral-950 border-r border-purple-500/10">
+          <div className="relative w-full h-64 sm:h-80 lg:h-full min-h-75 overflow-hidden bg-neutral-950 border-r border-purple-500/10">
             <Image
               src={currentProject.image}
               alt={currentProject.title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent lg:hidden" />
+            <div className="absolute inset-0 bg-linear-to-t from-neutral-950/80 via-transparent to-transparent lg:hidden" />
           </div>
 
           {/* Lado Direito: Informações do Projeto */}
