@@ -27,3 +27,4 @@ export interface ContactInfo {
   href: string;
   iconName: 'Mail' | 'Github' | 'Linkedin' | 'MessageSquare';
 }
+

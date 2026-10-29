@@ -1,3 +1,4 @@
+import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
 import { About } from '@/components/sections/About';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
@@ -16,6 +17,7 @@ export default function Home() {
         <Contact />
       </div>
       <Footer />
+      <WhatsAppFloat />
     </main>
   );
 }

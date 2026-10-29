@@ -3,13 +3,14 @@
 import { useState } from 'react';
 import { contactData } from '@/data/contact';
 import { HiMail } from 'react-icons/hi';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { Send, CheckCircle2 } from 'lucide-react';
 
 const iconMap = {
   Mail: <HiMail className="w-6 h-6 text-purple-400" />,
   Linkedin: <FaLinkedin className="w-6 h-6 text-purple-400" />,
   Github: <FaGithub className="w-6 h-6 text-purple-400" />,
+  MessageSquare: <FaWhatsapp className="w-6 h-6 text-purple-400" />,
 };
 
 export function Contact() {
