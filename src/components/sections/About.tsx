@@ -1,29 +1,14 @@
-import { Terminal, Database, Cpu, Rocket } from 'lucide-react';
+import { aboutHighlightsData } from '@/data/about';
+import { Terminal, Cpu, Database, Rocket } from 'lucide-react';
+
+const iconMap = {
+  Terminal: <Terminal className="w-6 h-6 text-purple-400" />,
+  Cpu: <Cpu className="w-6 h-6 text-purple-400" />,
+  Database: <Database className="w-6 h-6 text-purple-400" />,
+  Rocket: <Rocket className="w-6 h-6 text-purple-400" />,
+};
 
 export function About() {
-  const highlights = [
-    {
-      icon: <Terminal className="w-6 h-6 text-purple-400" />,
-      title: 'Desenvolvimento Full Stack & Desktop',
-      description: 'Criação de aplicações web, mobile e desktop escaláveis utilizando JavaScript, TypeScript, React, Next.js, Node.js, React Native e Electron.js.',
-    },
-    {
-      icon: <Cpu className="w-6 h-6 text-purple-400" />,
-      title: 'Sistemas de Baixo Nível & Redes',
-      description: 'Experiência com arquitetura de servidores em C++, comunicação via sockets e estruturas de pacotes de rede.',
-    },
-    {
-      icon: <Database className="w-6 h-6 text-purple-400" />,
-      title: 'Bancos de Dados & Fundamentos',
-      description: 'Domínio de HTML5, CSS3, estilização avançada e integração com bancos relacionais (MySQL) e não relacionais (MongoDB, Firebase).',
-    },
-    {
-      icon: <Rocket className="w-6 h-6 text-purple-400" />,
-      title: 'Alta Performance',
-      description: 'Foco em código limpo, otimização de performance, arquiteturas robustas e experiências de usuário fluidas.',
-    },
-  ];
-
   return (
     <section id="about" className="py-24 px-6 max-w-6xl mx-auto">
       <div className="flex flex-col items-center mb-16">
@@ -46,15 +31,15 @@ export function About() {
           </p>
         </div>
 
-        {/* Grade de Destaques */}
+        {/* Grade de Destaques Dinâmica */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {highlights.map((item, index) => (
+          {aboutHighlightsData.map((item, index) => (
             <div
               key={index}
               className="p-6 rounded-2xl border border-purple-500/15 bg-neutral-900/40 backdrop-blur-sm hover:border-purple-500/30 transition duration-300"
             >
               <div className="p-3 rounded-xl bg-purple-600/10 border border-purple-500/20 w-fit mb-4">
-                {item.icon}
+                {iconMap[item.iconName]}
               </div>
               <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">{item.description}</p>
