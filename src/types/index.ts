@@ -19,3 +19,11 @@ export interface Highlight {
   title: string;
   description: string;
 }
+
+export interface ContactInfo {
+  type: string;
+  label: string;
+  value: string;
+  href: string;
+  iconName: 'Mail' | 'Github' | 'Linkedin' | 'MessageSquare';
+}

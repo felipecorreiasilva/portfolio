@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { projectsData } from '@/data/projects';
-import { Code, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
 
 export function Projects() {
@@ -62,10 +63,11 @@ export function Projects() {
                       href={currentProject.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2.5 rounded-xl bg-neutral-800/80 hover:bg-purple-600/30 text-neutral-200 hover:text-purple-300 transition border border-neutral-700/50"
-                      aria-label="Código fonte"
+                      className="p-2.5 rounded-xl bg-neutral-800/80 hover:bg-purple-600/30 text-neutral-200 hover:text-purple-300 transition border border-neutral-700/50 flex items-center gap-2 text-xs font-medium"
+                      aria-label="Código fonte no GitHub"
                     >
-                      <Code className="w-4 h-4" />
+                      <FaGithub className="w-4 h-4 text-purple-400" />
+                      <span>Código</span>
                     </a>
                   )}
                   {currentProject.liveUrl && currentProject.liveUrl !== '#' && (
@@ -73,10 +75,11 @@ export function Projects() {
                       href={currentProject.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2.5 rounded-xl bg-neutral-800/80 hover:bg-purple-600/30 text-neutral-200 hover:text-purple-300 transition border border-neutral-700/50"
+                      className="p-2.5 rounded-xl bg-neutral-800/80 hover:bg-purple-600/30 text-neutral-200 hover:text-purple-300 transition border border-neutral-700/50 flex items-center gap-2 text-xs font-medium"
                       aria-label="Ver projeto online"
                     >
-                      <Globe className="w-4 h-4" />
+                      <Globe className="w-4 h-4 text-purple-400" />
+                      <span>Projeto</span>
                     </a>
                   )}
                 </div>
