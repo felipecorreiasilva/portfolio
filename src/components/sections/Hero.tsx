@@ -62,6 +62,7 @@ export function Hero() {
               src="/avatar.png"
               alt="Felipe Correia"
               fill
+              sizes="(max-width: 768px) 256px, 320px"
               className="rounded-full object-cover"
               priority
             />
