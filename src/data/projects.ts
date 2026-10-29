@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
     id: 'portfolio-web',
     title: 'Portfólio Profissional',
     description: 'Aplicação web moderna construída com Next.js (App Router), Tailwind CSS e efeitos visuais imersivos em vídeo.',
-    image: '/projects/portfolio.png',
+    image: '/projects/projectportfolio.png',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
     githubUrl: 'https://github.com/felipecorreiasilva/portfolio',
     liveUrl: '#',
