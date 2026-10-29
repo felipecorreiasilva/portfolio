@@ -2,12 +2,12 @@ import { Project } from '@/types';
 
 export const projectsData: Project[] = [
   {
-    id: 'oasis-rpg',
-    title: 'Oasis - 2.5D MMORPG',
-    description: 'RPG online desenvolvido em Unity (C#) com arquitetura URP, suportado por um servidor backend em C++ (inspirado em rAthena) e portal web em Next.js para gerenciamento.',
-    image: '/projects/oasis.png',
-    tags: ['C++', 'C#', 'Unity', 'Node.js', 'Next.js', 'MySQL'],
-    githubUrl: 'https://github.com/felipecorreiasilva',
+    id: 'omnixaixa',
+    title: 'OmniCaixa - Sistema de Gestão',
+    description: 'Sistema completo de gestão comercial composto por aplicações em Next.js (Website/Dashboard), React Native (Mobile) e Electron.js (Desktop), oferecendo uma solução multiplataforma integrada de alta performance.',
+    image: '/projects/omnixaixa.png', // Podes ajustar o nome da imagem conforme o ficheiro na tua pasta public/projects/
+    tags: ['Next.js', 'React Native', 'Electron.js', 'TypeScript', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/felipecorreiasilva/OmniCaixa',
     liveUrl: '#',
   },
   {
@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     id: 'calcular-frete-cep',
     title: 'Consulta de CEP & Cálculo de Frete',
     description: 'Aplicação desenvolvida para consulta rápida de endereços via CEP e cálculo automatizado de frete, integrada com APIs de logística.',
-    image: '/projects/projectcepfrete.png', // Podes substituir pelo caminho da imagem do teu projeto
+    image: '/projects/projectcepfrete.png',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
     githubUrl: 'https://github.com/felipecorreiasilva/calcular-frete-e-consultar-cep',
     liveUrl: '#',
