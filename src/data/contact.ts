@@ -18,8 +18,8 @@ export const contactData: ContactInfo[] = [
   {
     type: 'LinkedIn',
     label: 'Conecte-se comigo',
-    value: 'in/felipe-correia-0655a1357',
-    href: 'https://www.linkedin.com/in/felipe-correia-0655a1357/',
+    value: 'in/felipe-correia-dev',
+    href: 'https://www.linkedin.com/in/felipe-correia-dev/',
     iconName: 'Linkedin',
   },
   {
