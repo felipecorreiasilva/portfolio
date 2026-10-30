@@ -46,8 +46,8 @@ export function Hero() {
             </a>
 
             <a
-              href="/resume.pdf"
-              download="FelipeCorreia_CV.pdf"
+              href="/Currículo Felipe Correia.pdf"
+              download="Currículo Felipe Correia.pdf"
               className="px-6 py-3 rounded-xl border border-purple-500/30 hover:bg-purple-950/40 text-neutral-200 font-semibold transition-all duration-300 backdrop-blur-sm flex items-center gap-2"
             >
               Download CV
