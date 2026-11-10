@@ -59,7 +59,7 @@ export function Hero() {
         <div className="shrink-0">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-linear-to-tr from-purple-600 via-purple-500 to-purple-300 shadow-2xl shadow-purple-500/30">
             <Image
-              src="/avatar.png"
+              src="/avatar2.png"
               alt="Felipe Correia"
               fill
               sizes="(max-width: 768px) 256px, 320px"
